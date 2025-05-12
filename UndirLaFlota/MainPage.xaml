@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UndirLaFlota.MainPage"
+             Title="Hundir la Flota">
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Contadores y controles -->
+            <Frame BackgroundColor="#eeeeee" Padding="10" CornerRadius="10" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label x:Name="JugadasLabel" Text="Jugadas: 0" FontSize="18" FontAttributes="Bold" />
+                    <Label x:Name="AciertosLabel" Text="Aciertos: 0" FontSize="18" FontAttributes="Bold" />
+                    <Label x:Name="PartidasLabel" Text="Partidas: 0" FontSize="18" FontAttributes="Bold" />
+
+                    <Button Text="Colocar Aleatorio" Clicked="ColocarAleatorio_Clicked"
+                            BackgroundColor="#007ACC" TextColor="White" CornerRadius="10" />
+
+                    <Button Text="Colocar Manualmente" Clicked="ColocarManual_Clicked"
+                            BackgroundColor="#228B22" TextColor="White" CornerRadius="10" />
+
+                    <Button Text="Ver Historial"
+                            Clicked="VerHistorial_Clicked"
+                            BackgroundColor="Gray"
+                            TextColor="White"
+                            CornerRadius="10"/>
+
+
+                    <Picker x:Name="DireccionPicker" Title="Dirección del barco">
+                        <Picker.Items>
+                            <x:String>Horizontal</x:String>
+                            <x:String>Vertical</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Diseño adaptable con FlexLayout -->
+            <FlexLayout x:Name="TablerosFlex"
+                        Direction="Row"
+                        Wrap="NoWrap"
+                        AlignItems="Start"
+                        JustifyContent="SpaceEvenly">
+
+                <!-- Tu tablero -->
+                <VerticalStackLayout>
+                    <Label Text="Tu tablero" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Grid x:Name="TableroJugadorGrid"
+                          Margin="5"
+                          RowSpacing="1"
+                          ColumnSpacing="1" />
+                </VerticalStackLayout>
+
+                <!-- Tablero enemigo -->
+                <VerticalStackLayout>
+                    <Label Text="Tablero enemigo" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Grid x:Name="TableroEnemigoGrid"
+                          Margin="5"
+                          RowSpacing="1"
+                          ColumnSpacing="1" />
+                </VerticalStackLayout>
+            </FlexLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

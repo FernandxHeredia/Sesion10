@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndirLaFlota", "UndirLaFlota\UndirLaFlota.csproj", "{C258ACC0-BB4E-4E0A-A1CF-72EC4D9F10C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C258ACC0-BB4E-4E0A-A1CF-72EC4D9F10C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C258ACC0-BB4E-4E0A-A1CF-72EC4D9F10C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C258ACC0-BB4E-4E0A-A1CF-72EC4D9F10C9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C258ACC0-BB4E-4E0A-A1CF-72EC4D9F10C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C258ACC0-BB4E-4E0A-A1CF-72EC4D9F10C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C258ACC0-BB4E-4E0A-A1CF-72EC4D9F10C9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CD61765-0FAC-4A42-BFA8-1719EC3AB9D3}
+	EndGlobalSection
+EndGlobal
